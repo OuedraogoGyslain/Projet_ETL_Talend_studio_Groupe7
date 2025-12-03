@@ -1,12 +1,9 @@
 # Projet ETL avec Talend Open Studio
+Description
 
-## Description
-Application ETL pour extraire, transformer et charger des données depuis :
-- Un fichier CSV
-- Une base MySQL
-- Une base PostgreSQL source
-
-Vers une base PostgreSQL cible, avec monitoring via Grafana.
+Ce projet présente un processus ETL complet pour le traitement des informations sur les téléphones mobiles.
+Il utilise Talend Open Studio pour l'extraction, la transformation et le chargement des données depuis un fichier CSV vers des bases MySQL et PostgreSQL.
+Un monitoring avec Grafana est également mis en place pour suivre l’exécution des jobs ETL en temps réel.
 
 ## Groupe 7 
 - OUEDRAOGO Teegwende Gyslain

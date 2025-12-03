@@ -89,7 +89,7 @@ Le **dashboard Grafana** est disponible dans :
 `````
 Il permet de suivre en temps réel l’exécution du job ETL et les métriques principales (lignes insérées, durée, taux de réussite).
 `````
-## Auteurs : Groupe 7
+## Auteurs : Groupe 7 MISI
 - OUEDRAOGO Teegwende Gyslain  
 - SAWADOGO Eulodie Carelle W.  
 - TEONSA Mohamed  

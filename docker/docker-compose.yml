@@ -1,0 +1,51 @@
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_source
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: Phones
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  postgres_source:
+    image: postgres:17
+    container_name: postgres_source
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: Phones
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_source_data:/var/lib/postgresql/data
+
+  postgres_cible:
+    image: postgres:17
+    container_name: postgres_cible
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: Phones_cible
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_cible_data:/var/lib/postgresql/data
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3002:3000"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD}
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/dashboards:/etc/grafana/provisioning/dashboards
+
+volumes:
+  mysql_data:
+  postgres_source_data:
+  postgres_cible_data:
+  grafana_data:

@@ -36,31 +36,40 @@ L'objectif de ce projet est de mettre en place un **processus ETL avec Talend Op
 `````
 projet_etl_talend_groupe7SI/
 │
-├── README.md # Documentation principale
-├── INSTALLATION.md # Procédure d'installation détaillée
-├── TEST.md # Procédure de test
+├── README.md                          # Documentation principale du projet (synthèse, objectif, instructions, liens)
+├── INSTALLATION.md                    # Procédure détaillée pour installer et configurer le projet
+├── TEST.md                            # Procédure détaillée pour tester le projet et vérifier les résultats
 │
-├── talend/ # Jobs Talend
-│ └── ETL_Phones_informations_Version_Final.zip
+├── talend/                            # Contient les jobs Talend exportés
+│   └── ETL_Phones_informations_Version_Final.zip   # Export complet du job ETL
 │
-├── data/ # Données utilisées
-│ └── sources/
-│ └── Phones.csv
+├── data/                              # Données sources utilisées pour l'ETL
+│   └── sources/
+│       └── Phones.csv                 # Fichier CSV contenant les informations des téléphones
 │
-├── database/ # Scripts de bases de données
-│ ├── mysql/
-│ ├── postgresql_source/
-│ └── postgresql_cible/
+├── database/                          # Scripts pour créer et remplir les bases de données
+│   ├── mysql/                         # Scripts MySQL
+│   │   ├── create_database.sql        # Script pour créer la base et les tables MySQL
+│   │   └── insert_sample_data.sql     # Script pour insérer des données exemples dans MySQL
+│   ├── postgresql_source/             # Scripts PostgreSQL source
+│   │   ├── create_database.sql        # Création de la base source PostgreSQL
+│   │   └── insert_sample_data.sql     # Données exemples pour la base source
+│   └── postgresql_cible/              # Scripts PostgreSQL cible
+│       └── create_database.sql        # Création de la base cible et des tables pour charger les données
 │
-├── grafana/ # Dashboards Grafana
-│ └── dashboards/
+├── grafana/                           # Dashboards Grafana pour le monitoring de l'ETL
+│   └── dashboards/
+│       ├── etl_monitoring.json        # Dashboard principal ETL
+│       ├── etl_monitoring2.json       # Dashboard secondaire ou variantes
+│       └── etl_monitoring_table.json  # Dashboard en vue tableau pour les métriques détaillées
 │
-├── docker/ # Configuration Docker
-│ ├── docker-compose.yml
-│ └── .env
+├── docker/                            # Conteneurs et configuration Docker pour le projet
+│   ├── docker-compose.yml             # Orchestration des conteneurs (MySQL, PostgreSQL, Grafana)
+│   └── .env                           # Variables d'environnement pour Docker (ports, utilisateurs, mots de passe)
 │
-└── docs/ # Documentation supplémentaire
-└── screenshots/
+└── docs/                              # Documentation supplémentaire et captures d'écran
+    └── screenshots/                   # Images montrant l'interface, les dashboards, ou étapes de tests
+
 `````
 ---
 

@@ -49,11 +49,13 @@ docker exec postgres_source psql -U postgres -d Phones -c "SELECT COUNT(*) FROM 
 ### PostgreSQL Cible
 ```bash
 docker exec -i postgres_cible psql -U postgres < database/postgresql_cible/create_database.sql
+```
 
-```Vérifier( ça doit ramener les tables de notre bd cible)```
+```Vérifier( ça doit ramener les tables de notre bd cible)
 docker exec postgres_cible psql -U postgres -d Phones_cible -c "\dt"
+```
 
-## Étape 4 : Importer le projet Talend
+### Étape 4 : Importer le projet Talend
 
 1. Ouvrir Talend Open Studio
 2. File → Import Items
@@ -76,6 +78,7 @@ Dans Talend, sous "Metadata" :
 5. Sélectionner la datasource PostgreSQL (cible)
 
 code de test sur graphana : 
+```
             SELECT
             job_name,
             job_start,
@@ -87,9 +90,9 @@ code de test sur graphana :
             FROM etl_metrics
             ORDER BY job_start DESC
             LIMIT 20;
+```
 
-
-## ✅ Vérification de l'installation
+## Vérification de l'installation
 
 Exécutez les commandes suivantes :
 ```bash

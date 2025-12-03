@@ -32,14 +32,6 @@ L'objectif de ce projet est de mettre en place un **processus ETL avec Talend Op
 
 ---
 
-## Groupe 7
-- OUEDRAOGO Teegwende Gyslain  
-- SAWADOGO Eulodie Carelle W.  
-- TEONSA Mohamed  
-- ZOMA Wendyam Rodrigue  
-
----
-
 ## Structure du dépôt
 `````
 projet_etl_talend_groupe7SI/
@@ -97,3 +89,10 @@ Le **dashboard Grafana** est disponible dans :
 `````
 Il permet de suivre en temps réel l’exécution du job ETL et les métriques principales (lignes insérées, durée, taux de réussite).
 `````
+## Auteurs : Groupe 7
+- OUEDRAOGO Teegwende Gyslain  
+- SAWADOGO Eulodie Carelle W.  
+- TEONSA Mohamed  
+- ZOMA Wendyam Rodrigue  
+
+---

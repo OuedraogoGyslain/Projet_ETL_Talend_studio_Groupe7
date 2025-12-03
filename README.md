@@ -12,45 +12,42 @@ Un monitoring avec Grafana est également mis en place pour suivre l’exécutio
 - ZOMA Wendyam Rodrigue
 
 
-## Structure du depot GIT
 projet_etl_talend_groupe7SI/
 │
 ├── README.md                          # Documentation principale
 ├── INSTALLATION.md                    # Procédure d'installation détaillée
-├── TEST.md                           # Procédure de test
+├── TEST.md                            # Procédure de test
 │
-├── talend/
-│                    
-│   └── ETL_Phones_informations_Version_Final.zip         # Export du job en ZIP
+├── talend/                            # Jobs Talend
+│   └── ETL_Phones_informations_Version_Final.zip  # Export du job en ZIP
 │
-├── data/
-│   ├── sources/
-│   │   └──Phones.csv               # Fichier CSV source
-│                     
+├── data/                              # Données utilisées
+│   └── sources/
+│       └── Phones.csv                 # Fichier CSV source
 │
-├── database/
+├── database/                          # Scripts de bases de données
 │   ├── mysql/
-│   │   ├── create_database.sql       # Script création DB MySQL
-│   │   └── insert_sample_data.sql    # Données d'exemple
+│   │   ├── create_database.sql        # Script création DB MySQL
+│   │   └── insert_sample_data.sql     # Données d'exemple MySQL
 │   ├── postgresql_source/
-│   │   ├── create_database.sql
-│   │   └── insert_sample_data.sql
+│   │   ├── create_database.sql        # Script création DB PostgreSQL source
+│   │   └── insert_sample_data.sql     # Données d'exemple PostgreSQL source
 │   └── postgresql_cible/
-│       └── create_database.sql       # Structure de la table cible
+│       └── create_database.sql        # Structure de la table cible PostgreSQL
 │
-├── grafana/
-│   ├── dashboards/
-│       └── etl_monitoring.json         # Dashboard Grafana exporté
-│       └── etl_monitoring2.json        # Dashboard Grafana exporté
-│       └── etl_monitoring_table.json   # Dashboard Grafana exporté
-│  
+├── grafana/                           # Dashboards Grafana
+│   └── dashboards/
+│       ├── etl_monitoring.json        # Dashboard exporté
+│       ├── etl_monitoring2.json       # Dashboard exporté
+│       └── etl_monitoring_table.json  # Dashboard exporté
 │
-├── docker/
-│   ├── docker-compose.yml            # Orchestration des conteneurs
-│   └── .env                          # Variables d'environnement
+├── docker/                            # Configuration Docker
+│   ├── docker-compose.yml             # Orchestration des conteneurs
+│   └── .env                           # Variables d'environnement
 │
-└── docs/
-    ├── screenshots/                  # Captures d'écran
+└── docs/                              # Documentation supplémentaire
+    └── screenshots/                   # Captures d'écran
+
     
 
 ## Technologies utilisées

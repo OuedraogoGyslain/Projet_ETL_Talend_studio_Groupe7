@@ -4,19 +4,19 @@
 
 ### CSV
 ```bash
-cat data/sources/Sources.csv
+cat données/sources_csv/phones.csv
 # Doit afficher 1000 lignes
 ```
 
 ### MySQL
 ```bash
-docker exec -i mysql_container mysql -uroot -ppassword -e "SELECT COUNT(*) FROM DB_Sources_mysql;"
+docker exec mysql_source mysql -uroot -proot123 phones -e "SELECT COUNT(*) FROM smartphone_prices;"
 # Résultat attendu : 16 lignes
 ```
 
 ### PostgreSQL Source
 ```bash
-docker exec -i postgres_source psql -U postgres -c "SELECT COUNT(*) FROM DB_sources_postgresql;"
+docker exec postgres_source psql -U postgres -d Phones -c "SELECT COUNT(*) FROM brand_origin;"
 # Résultat attendu : 15 lignes
 ```
 

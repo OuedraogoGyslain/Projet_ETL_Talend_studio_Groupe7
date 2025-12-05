@@ -43,8 +43,8 @@ projet_etl_talend_groupe7SI/
 ├── talend/                            # Contient les jobs Talend exportés
 │   └── ETL_Phones_informations_Version_Final.zip   # Export complet du job ETL
 │
-├── data/                              # Données sources utilisées pour l'ETL
-│   └── sources/
+├── données/                              # Données sources utilisées pour l'ETL
+│   └── sources_csv/
 │       └── Phones.csv                 # Fichier CSV contenant les informations des téléphones
 │
 ├── database/                          # Scripts pour créer et remplir les bases de données

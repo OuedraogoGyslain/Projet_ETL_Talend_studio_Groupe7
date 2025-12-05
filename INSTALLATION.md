@@ -1,15 +1,15 @@
-# 📦 Procédure d'Installation
+# Procédure d'Installation
 
 ## Prérequis
 - Java JDK 11 ou supérieur
-- Talend Open Studio (téléchargé depuis talend.com)
+- Talend Open Studio (téléchargé sur le drive https://drive.google.com/file/d/1Zl_K-sxM8EH5S8h7NnjamYs2fV6Ra0fY/view?usp=sharing)
 - Docker & Docker Compose
 - Git
 
 ## Étape 1 : Cloner le dépôt
 ```bash
-git clone https://github.com/votre-username/projet-etl-talend.git
-cd projet-etl-talend
+git clone https://github.com/OuedraogoGyslain/Projet_ETL_Talend_studio_Groupe7.git
+cd projet_etl_talend_groupe7SI
 ```
 
 ## Étape 2 : Démarrer les bases de données avec Docker

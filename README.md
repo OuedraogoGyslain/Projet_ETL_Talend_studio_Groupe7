@@ -11,9 +11,10 @@ Un **monitoring avec Grafana** est également mis en place pour suivre l’exéc
 L'objectif de ce projet est de mettre en place un **processus ETL avec Talend Open Studio** afin de :  
 
 1. **Extraire les données depuis plusieurs sources :**  
-   1.1. Un fichier CSV (`Phones.csv`) contenant les informations sur les téléphones mobiles
-   1.2. Une base **MySQL** (table `smartphone_prices`)  contenant les infos de ventes 
-   1.3. Une base **PostgreSQL source** (tables `brand_origin` contenant les pays origines des telephones)  
+   1.1. Un fichier CSV (`Phones.csv`) contenant les informations sur les téléphones mobiles  
+   1.2. Une base **MySQL** (table `smartphone_prices`)  
+   1.3. Une base **PostgreSQL source** (tables `brand_origin` et autres tables de référence)  
+  
 
 2. **Transformer les données** pour :  
    - Consolider les informations provenant des différentes sources  
